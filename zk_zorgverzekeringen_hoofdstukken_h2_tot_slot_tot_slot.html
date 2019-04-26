@@ -7,7 +7,7 @@
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/><!-- must be the first element in head -->
 <meta charset="UTF-8" />
-<TITLE>Titelpagina</TITLE>
+<TITLE>Tot slot</TITLE>
 
 <style>
     
@@ -492,6 +492,34 @@ donkerblauw #002857
 
 
 
+.dragdropmedtxt div {
+    background: transparent !important !important;
+    background-color: transparent !important;
+}
+    
+.dragdropmedtxt .ttxt {
+    border-radius: 6px !important;
+    width: 276px !important;
+	height: 60px !important;
+	background-color: #279EDA !important;
+}
+
+.dragdropmedtxt .ttxt td {
+    width: 276px !important;
+}
+
+.dragdropmedtxt p {
+	padding: 0px 20px !important;
+}
+
+.dragdropmedtxt span, .dragdropmedtxt li {	
+	font-family: "PT Sans" !important;
+	color: white !important;
+	font-size: 12pt !important;
+    line-height: 125% !important;
+}
+
+
 
 .dragdroplargetxt div {
     background: transparent !important !important;
@@ -838,10 +866,11 @@ donkerblauw #002857
 <script>
 
 // <!-- 
-if(findOPAWindow()==n && !isNewWinPopup()) location.href = "index.html";
-if( !is.min )
+setTrivantisTextDefaults({"mT":"0px","mB":"0px","lh":"1.15"});
+;if( !is.min )
     document.write( "Your browser does not support dynamic html. Please download a current version of either <a href='http://www.microsoft.com/ie/'>Microsoft Internet Explorer or Edge</a> or <a href='http://www.apple.com/safari/download/'>Safari</a> or <a href='http://www.mozilla.com/firefox/'>Mozilla Firefox</a> and try visiting our site again. Thank You.<br /><br />" )
 
+var VarH2 = new Variable( 'VarH2', '', 0, 0, '', 365, 'zk_zorgverzekeringen.html', f );
 var VarTriMuteAllFLV = new Variable( 'VarTriMuteAllFLV', '', 0, 0, null, null, 'zk_zorgverzekeringen.html'  );
 var bRcdTitle = false;
 var pgWidth_phonePort = 480;
@@ -879,17 +908,18 @@ function init_page()
 		og4.cwObj={};
 		og4.cwObj.arChld=[
     ];
+		VarH2.add('_done');
 		trivPage.issueShowActions(arWnds);
 		trivArExec(arWnds,function(wnd){ wnd.issueActions(11); });
 		trivPage.actionMute();
 	}
 }
 function trivPrevPage() {
-    trivExitPage( '', true )
+    trivExitPage( 'zk_zorgverzekeringen_hoofdstukken_h2_hotspot_hotspot.html', true )
 }
 
 function trivNextPage() {
-    trivExitPage( 'zk_zorgverzekeringen_titelpagina_s_introductie.html', true )
+    trivExitPage( 'zk_zorgverzekeringen_hoofdstukken_h3_page_1.html', true )
 }
 
 
@@ -897,18 +927,25 @@ if( is.min ) {
 	var rcdObj = { rcdData: {} };
 
 	var og4 = new jsWndOther(); //Script
-	var image169 = new jsWndImage(); //Titelpagina
-	var shape102 = new jsWndShape(); //Rectangle
-	var text104 = new jsWndText(); //>>>Titel1
-	var text151 = new jsWndText(); //>>>Subtitel1
-	var image105 = new jsWndImage(); //Leerlijn_product
-	var textbutton106 = new jsWndTextButton(); //Button start
-	var textbutton108 = new jsWndTextButton(); //Button sluiten
+	var shape223 = new jsWndShape(); //Header
+	var textbutton221 = new jsWndTextButton(); //Button sluit
+	var textbutton2674 = new jsWndTextButton(); //Button menu
+	var text228 = new jsWndText(); //Module title
+	var image219 = new jsWndImage(); //Logo-ZK
+	var shape218 = new jsWndShape(); //Overlay
+	var text236 = new jsWndText(); //Module subtitle
+	var textbutton2846 = new jsWndTextButton(); //Vorige
+	var textbutton2844 = new jsWndTextButton(); //Volgende
+	var shape2843 = new jsWndShape(); //Rounded Rectangle
+	var textbutton3112 = new jsWndTextButton(); //Volgende
+	var image3114 = new jsWndImage(); //H1_tot slot
+	var text3115 = new jsWndText(); //>>>tekst
+	var text3116 = new jsWndText(); //>>>Titel1
 	og4.type=14;
 	var alertCtr = 0;
-	var trivPageId=103; //trivPage.id
-	var arWnds = [image169,shape102,text104,text151,image105,textbutton106,textbutton108];
-	var arAttachObj = [og4,image169,shape102,text104,text151,image105,textbutton106,textbutton108];
+	var trivPageId=3110; //trivPage.id
+	var arWnds = [shape223,textbutton221,textbutton2674,text228,image219,shape218,text236,shape2843,image3114,text3115,text3116,textbutton2846,textbutton2844,textbutton3112];
+	var arAttachObj = [og4,shape223,textbutton221,textbutton2674,text228,image219,shape218,text236,textbutton2846,textbutton2844,shape2843,textbutton3112,image3114,text3115,text3116];
 	var arPooledMedia = [];
 }
 /*! jQuery v3.3.1 | (c) JS Foundation and other contributors | jquery.org/license */
@@ -1055,7 +1092,7 @@ $('.MPC_E_sel').toggleClass(stateName);
 
 
 
-loadIncFiles('zk_zorgverzekeringen_titelpagina_s_titelpagina', false);
+loadIncFiles('zk_zorgverzekeringen_hoofdstukken_h2_tot_slot_tot_slot', false);
 
 // -->
 </script>

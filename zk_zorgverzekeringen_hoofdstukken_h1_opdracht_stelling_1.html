@@ -492,6 +492,34 @@ donkerblauw #002857
 
 
 
+.dragdropmedtxt div {
+    background: transparent !important !important;
+    background-color: transparent !important;
+}
+    
+.dragdropmedtxt .ttxt {
+    border-radius: 6px !important;
+    width: 276px !important;
+	height: 60px !important;
+	background-color: #279EDA !important;
+}
+
+.dragdropmedtxt .ttxt td {
+    width: 276px !important;
+}
+
+.dragdropmedtxt p {
+	padding: 0px 20px !important;
+}
+
+.dragdropmedtxt span, .dragdropmedtxt li {	
+	font-family: "PT Sans" !important;
+	color: white !important;
+	font-size: 12pt !important;
+    line-height: 125% !important;
+}
+
+
 
 .dragdroplargetxt div {
     background: transparent !important !important;
@@ -842,8 +870,8 @@ donkerblauw #002857
 <script>
 
 // <!-- 
-if(findOPAWindow()==n && !isNewWinPopup()) location.href = "index.html?jmptopg=zk_zorgverzekeringen_hoofdstukken_h1_opdracht_stelling_1.html";
-if( !is.min )
+setTrivantisTextDefaults({"mT":"0px","mB":"0px","lh":"1.15"});
+;if( !is.min )
     document.write( "Your browser does not support dynamic html. Please download a current version of either <a href='http://www.microsoft.com/ie/'>Microsoft Internet Explorer or Edge</a> or <a href='http://www.apple.com/safari/download/'>Safari</a> or <a href='http://www.mozilla.com/firefox/'>Mozilla Firefox</a> and try visiting our site again. Thank You.<br /><br />" )
 
 var VarH1 = new Variable( 'VarH1', '0', 0, 0, '', 365, 'zk_zorgverzekeringen.html', f );
@@ -1010,8 +1038,8 @@ if( is.min ) {
 	var image2825 = new jsWndImage(); //Stopwatch
 	var image2833 = new jsWndImage(); //Stopwatch
 	var image2837 = new jsWndImage(); //Stopwatch
-	var textbutton2708 = new jsWndTextButton(); //Button start tijd
 	var textbutton2715 = new jsWndTextButton(); //Button start test
+	var textbutton2708 = new jsWndTextButton(); //Button start tijd
 	var testtimer2712 = new jsWndTestTimer(); //Timer_2712
 	var text2687 = new jsWndText(); //>>>tekst
 	var text2704 = new jsWndText(); //>>>Titel1
@@ -1108,7 +1136,7 @@ ToggleState_TrueFalse_True(stateName);
 	og2386.type=14;
 	og2336.arChld=[shape2337,shape2338,shape2339,shape2340,shape2341];
 	og2336.type=14;
-	og2684.arChld=[shape2685,shape2686,image2803,image2829,image2805,image2809,image2813,image2817,image2821,image2825,image2833,image2837,textbutton2708,textbutton2715,testtimer2712,text2687,text2704];
+	og2684.arChld=[shape2685,shape2686,image2803,image2829,image2805,image2809,image2813,image2817,image2821,image2825,image2833,image2837,textbutton2715,textbutton2708,testtimer2712,text2687,text2704];
 	og2684.type=14;
 	var TrivTimerProps_2712 = {bShowHours:false,bShowMin:true,bShowSec:true, countdown:true};
 	function update_testtimer2712(elapsedTime) {
@@ -1117,8 +1145,8 @@ ToggleState_TrueFalse_True(stateName);
 	
 	var alertCtr = 0;
 	var trivPageId=249; //trivPage.id
-	var arWnds = [shape223,textbutton221,textbutton2674,text228,image219,shape218,text232,shape275,text2364,text2365,radio2366,text2376,text2377,radio2378,text2346,text2355,image2502,image2388,image2387,image2393,image2392,text2332,text2331,text2367,shape2416,shape2337,shape2338,shape2339,shape2340,shape2341,textbutton264,textbutton261,shape2685,shape2686,image2803,image2829,image2805,image2809,image2813,image2817,image2821,image2825,image2833,image2837,textbutton2708,textbutton2715,testtimer2712,text2687,text2704];
-	var arAttachObj = [og4,shape223,textbutton221,textbutton2674,text228,image219,shape218,text232,textbutton264,textbutton261,shape275,og2415,qu2359,text2364,text2365,radio2366,qu2371,text2376,text2377,radio2378,og2384,text2346,text2355,image2502,og2386,image2388,image2387,image2393,image2392,text2332,text2331,text2367,shape2416,og2336,shape2337,shape2338,shape2339,shape2340,shape2341,og2684,shape2685,shape2686,image2803,image2829,image2805,image2809,image2813,image2817,image2821,image2825,image2833,image2837,textbutton2708,textbutton2715,testtimer2712,text2687,text2704];
+	var arWnds = [shape223,textbutton221,textbutton2674,text228,image219,shape218,text232,shape275,text2364,text2365,radio2366,text2376,text2377,radio2378,text2346,text2355,image2502,image2388,image2387,image2393,image2392,text2332,text2331,text2367,shape2416,shape2337,shape2338,shape2339,shape2340,shape2341,textbutton264,textbutton261,shape2685,shape2686,image2803,image2829,image2805,image2809,image2813,image2817,image2821,image2825,image2833,image2837,textbutton2715,textbutton2708,testtimer2712,text2687,text2704];
+	var arAttachObj = [og4,shape223,textbutton221,textbutton2674,text228,image219,shape218,text232,textbutton264,textbutton261,shape275,og2415,qu2359,text2364,text2365,radio2366,qu2371,text2376,text2377,radio2378,og2384,text2346,text2355,image2502,og2386,image2388,image2387,image2393,image2392,text2332,text2331,text2367,shape2416,og2336,shape2337,shape2338,shape2339,shape2340,shape2341,og2684,shape2685,shape2686,image2803,image2829,image2805,image2809,image2813,image2817,image2821,image2825,image2833,image2837,textbutton2715,textbutton2708,testtimer2712,text2687,text2704];
 	var arPooledMedia = [];
 	var arQuest = [qu2359,qu2371];
 }

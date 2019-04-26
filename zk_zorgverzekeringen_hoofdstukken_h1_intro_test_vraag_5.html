@@ -492,6 +492,34 @@ donkerblauw #002857
 
 
 
+.dragdropmedtxt div {
+    background: transparent !important !important;
+    background-color: transparent !important;
+}
+    
+.dragdropmedtxt .ttxt {
+    border-radius: 6px !important;
+    width: 276px !important;
+	height: 60px !important;
+	background-color: #279EDA !important;
+}
+
+.dragdropmedtxt .ttxt td {
+    width: 276px !important;
+}
+
+.dragdropmedtxt p {
+	padding: 0px 20px !important;
+}
+
+.dragdropmedtxt span, .dragdropmedtxt li {	
+	font-family: "PT Sans" !important;
+	color: white !important;
+	font-size: 12pt !important;
+    line-height: 125% !important;
+}
+
+
 
 .dragdroplargetxt div {
     background: transparent !important !important;
@@ -843,12 +871,11 @@ donkerblauw #002857
 <script>
 
 // <!-- 
-if(findOPAWindow()==n && !isNewWinPopup()) location.href = "index.html?jmptopg=zk_zorgverzekeringen_hoofdstukken_h1_intro_test_vraag_5.html";
-if( !is.min )
+setTrivantisTextDefaults({"mT":"0px","mB":"0px","lh":"1.15"});
+;if( !is.min )
     document.write( "Your browser does not support dynamic html. Please download a current version of either <a href='http://www.microsoft.com/ie/'>Microsoft Internet Explorer or Edge</a> or <a href='http://www.apple.com/safari/download/'>Safari</a> or <a href='http://www.mozilla.com/firefox/'>Mozilla Firefox</a> and try visiting our site again. Thank You.<br /><br />" )
 
 var VarQ1 = new Variable( 'VarQ1', '', 0, 0, '', 365, 'zk_zorgverzekeringen.html', f );
-var VarQuestion_1426 = new Variable( 'VarQuestion_1426', '', 0, 0, '', 365, 'zk_zorgverzekeringen.html', f );
 var VarQuestion_1599 = new Variable( 'VarQuestion_1599', '', 0, 0, '', 365, 'zk_zorgverzekeringen.html', f );
 var VarQ1_score = new Variable( 'VarQ1_score', '', 0, 0, '', 365, 'zk_zorgverzekeringen.html', f );
 var VarDragDrop_counter_1777 = new Variable( 'VarDragDrop_counter_1777', '', 0, 0, null, null, 'zk_zorgverzekeringen.html', f );
@@ -1077,19 +1104,19 @@ if( is.min ) {
 		{ btnnm:"radio1683", btn:"tobj1683", txt:"tobj1682", img:null }
 		];
 	grpAction0for1781 = function(pF){
-    if(VarQuestion_1599.contains('1-1,')||VarQuestion_1599.contains('1-2'))VarDragDrop_counter_1777.add('1'); else if(typeof pF == 'function') pF();
+    if(VarQuestion_1599.contains('1-1')||VarQuestion_1599.contains('1-2'))VarDragDrop_counter_1777.add('1'); else if(typeof pF == 'function') pF();
     if(typeof pF == 'function') pF();
 
 };
 
 	grpAction1for1781 = function(pF){
-    if(VarQuestion_1599.contains('2-1,')||VarQuestion_1599.contains('2-2'))VarDragDrop_counter_1777.add('1'); else if(typeof pF == 'function') pF();
+    if(VarQuestion_1599.contains('2-1')||VarQuestion_1599.contains('2-2'))VarDragDrop_counter_1777.add('1'); else if(typeof pF == 'function') pF();
     if(typeof pF == 'function') pF();
 
 };
 
 	grpAction2for1781 = function(pF){
-    if(VarQuestion_1599.contains('3-3')||VarQuestion_1426.contains('3-4'))VarDragDrop_counter_1777.add('1'); else if(typeof pF == 'function') pF();
+    if(VarQuestion_1599.contains('3-3')||VarQuestion_1599.contains('3-4'))VarDragDrop_counter_1777.add('1'); else if(typeof pF == 'function') pF();
     if(typeof pF == 'function') pF();
 
 };

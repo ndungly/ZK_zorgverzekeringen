@@ -492,6 +492,34 @@ donkerblauw #002857
 
 
 
+.dragdropmedtxt div {
+    background: transparent !important !important;
+    background-color: transparent !important;
+}
+    
+.dragdropmedtxt .ttxt {
+    border-radius: 6px !important;
+    width: 276px !important;
+	height: 60px !important;
+	background-color: #279EDA !important;
+}
+
+.dragdropmedtxt .ttxt td {
+    width: 276px !important;
+}
+
+.dragdropmedtxt p {
+	padding: 0px 20px !important;
+}
+
+.dragdropmedtxt span, .dragdropmedtxt li {	
+	font-family: "PT Sans" !important;
+	color: white !important;
+	font-size: 12pt !important;
+    line-height: 125% !important;
+}
+
+
 
 .dragdroplargetxt div {
     background: transparent !important !important;
@@ -842,8 +870,8 @@ donkerblauw #002857
 <script>
 
 // <!-- 
-if(findOPAWindow()==n && !isNewWinPopup()) location.href = "index.html?jmptopg=zk_zorgverzekeringen_hoofdstukken_h1_intro_test_vraag_2.html";
-if( !is.min )
+setTrivantisTextDefaults({"mT":"0px","mB":"0px","lh":"1.15"});
+;if( !is.min )
     document.write( "Your browser does not support dynamic html. Please download a current version of either <a href='http://www.microsoft.com/ie/'>Microsoft Internet Explorer or Edge</a> or <a href='http://www.apple.com/safari/download/'>Safari</a> or <a href='http://www.mozilla.com/firefox/'>Mozilla Firefox</a> and try visiting our site again. Thank You.<br /><br />" )
 
 var VarQ1 = new Variable( 'VarQ1', '', 0, 0, '', 365, 'zk_zorgverzekeringen.html', f );
@@ -959,6 +987,9 @@ function init_page()
 		og840.cwObj={};
 		og840.cwObj.arChld=[
     ];
+		og3970.cwObj={};
+		og3970.cwObj.arChld=[
+    ];
 		VarCorrectAns_1418.set('A, B, E');
 if(VarQ1.contains('_02')){
 {og893.issueActions(1001);}
@@ -1027,6 +1058,13 @@ if( is.min ) {
 	var image841 = new jsWndImage(); //dragdrop-correct-dark-4
 	var image848 = new jsWndImage(); //dragdrop-correct-dark-5
 	var textbutton863 = new jsWndTextButton(); //Button check
+	var og3970 = new jsWndOther(); //Progress
+	var shape3971 = new jsWndShape(); //Ellipse
+	var shape3972 = new jsWndShape(); //Ellipse
+	var shape3973 = new jsWndShape(); //Ellipse
+	var shape3974 = new jsWndShape(); //Ellipse
+	var shape3975 = new jsWndShape(); //Ellipse
+	var shape3976 = new jsWndShape(); //Ellipse
 	var shape1301 = new jsWndShape(); //Disable pane
 	og4.type=14;
 	qu1676.arChld=[text1681,text1682,radio1683];
@@ -1246,10 +1284,12 @@ ToggleState_vinkE(stateName);
 }
 	og840.arChld=[image844,image843,image842,image841,image848];
 	og840.type=14;
+	og3970.arChld=[shape3971,shape3972,shape3973,shape3974,shape3975,shape3976];
+	og3970.type=14;
 	var alertCtr = 0;
 	var trivPageId=256; //trivPage.id
-	var arWnds = [shape223,textbutton221,textbutton2674,text228,image219,shape218,text232,shape275,text1681,text1682,radio1683,text1423,text1424,radio1425,text1431,text1432,radio1433,text726,text725,text730,image746,text768,image772,text779,image783,text790,image794,text805,image801,image844,image843,image842,image841,image848,shape1301,textbutton264,textbutton261,textbutton863];
-	var arAttachObj = [og4,shape223,textbutton221,textbutton2674,text228,image219,shape218,text232,textbutton264,textbutton261,shape275,qu1676,text1681,text1682,radio1683,qu1418,text1423,text1424,radio1425,qu1426,text1431,text1432,radio1433,og893,og905,text726,text725,og874,og731,text730,image746,text768,image772,text779,image783,text790,image794,text805,image801,og840,image844,image843,image842,image841,image848,textbutton863,shape1301];
+	var arWnds = [shape223,textbutton221,textbutton2674,text228,image219,shape218,text232,shape275,text1681,text1682,radio1683,text1423,text1424,radio1425,text1431,text1432,radio1433,text726,text725,text730,image746,text768,image772,text779,image783,text790,image794,text805,image801,image844,image843,image842,image841,image848,shape3971,shape3972,shape3973,shape3974,shape3975,shape3976,shape1301,textbutton264,textbutton261,textbutton863];
+	var arAttachObj = [og4,shape223,textbutton221,textbutton2674,text228,image219,shape218,text232,textbutton264,textbutton261,shape275,qu1676,text1681,text1682,radio1683,qu1418,text1423,text1424,radio1425,qu1426,text1431,text1432,radio1433,og893,og905,text726,text725,og874,og731,text730,image746,text768,image772,text779,image783,text790,image794,text805,image801,og840,image844,image843,image842,image841,image848,textbutton863,og3970,shape3971,shape3972,shape3973,shape3974,shape3975,shape3976,shape1301];
 	var arPooledMedia = [];
 	var arQuest = [qu1676,qu1418,qu1426];
 }
