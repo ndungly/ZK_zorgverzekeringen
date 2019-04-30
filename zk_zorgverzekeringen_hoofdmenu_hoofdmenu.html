@@ -873,6 +873,7 @@ setTrivantisTextDefaults({"mT":"0px","mB":"0px","lh":"1.15"});
 var VarH1 = new Variable( 'VarH1', '0', 0, 0, '', 365, 'zk_zorgverzekeringen.html', f );
 var VarH2 = new Variable( 'VarH2', '', 0, 0, '', 365, 'zk_zorgverzekeringen.html', f );
 var VarH3 = new Variable( 'VarH3', '', 0, 0, '', 365, 'zk_zorgverzekeringen.html', f );
+var AICC_Lesson_Status = new Variable( 'AICC_Lesson_Status', '0', 0, 0, null, null, 'zk_zorgverzekeringen.html', f );
 var VarTriMuteAllFLV = new Variable( 'VarTriMuteAllFLV', '', 0, 0, null, null, 'zk_zorgverzekeringen.html'  );
 var bRcdTitle = false;
 var pgWidth_phonePort = 480;
@@ -927,6 +928,10 @@ function init_page()
 		{og2722.issueActions(1001);}
 if(VarH1.contains('_done')&&VarH2.contains('_done')&&VarH3.contains('_done')){
 og6142.show(); 
+}
+else if(typeof pF == 'function') pF();
+if(VarH1.contains('_done')&&VarH2.contains('_done')&&VarH3.contains('_done')){
+AICC_Lesson_Status.set(''); 
 }
 else if(typeof pF == 'function') pF();
 		trivPage.issueShowActions(arWnds);
