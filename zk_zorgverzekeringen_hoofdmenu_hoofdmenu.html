@@ -921,7 +921,14 @@ function init_page()
     {type:6,on:1001,delay:0,name:'OnGroupShow', actItem:function(){
         grpAction2for2722();
     }}];
+		og6142.cwObj={};
+		og6142.cwObj.arChld=[
+    ];
 		{og2722.issueActions(1001);}
+if(VarH1.contains('_done')&&VarH2.contains('_done')&&VarH3.contains('_done')){
+og6142.show(); 
+}
+else if(typeof pF == 'function') pF();
 		trivPage.issueShowActions(arWnds);
 		trivArExec(arWnds,function(wnd){ wnd.issueActions(11); });
 		trivPage.actionMute();
@@ -961,6 +968,23 @@ if( is.min ) {
 	var textbutton171 = new jsWndTextButton(); //Button 1
 	var textbutton175 = new jsWndTextButton(); //Button 2
 	var textbutton180 = new jsWndTextButton(); //Button 3
+	var og6142 = new jsWndOther(); //Sluit popup
+	var shape6143 = new jsWndShape(); //Overlay
+	var shape6144 = new jsWndShape(); //Blue bg
+	var text6145 = new jsWndText(); //>>>tekst
+	var text6162 = new jsWndText(); //>>>Titel1
+	var image6147 = new jsWndImage(); //Kruisje
+	var image6148 = new jsWndImage(); //Kruisje
+	var image6149 = new jsWndImage(); //Kruisje
+	var image6151 = new jsWndImage(); //Kruisje
+	var image6153 = new jsWndImage(); //Path 107
+	var image6154 = new jsWndImage(); //Path 107
+	var image6156 = new jsWndImage(); //Path 107
+	var image6157 = new jsWndImage(); //Path 107
+	var image6158 = new jsWndImage(); //Path 107
+	var image6159 = new jsWndImage(); //Path 107
+	var image6167 = new jsWndImage(); //Kruisje
+	var shape6168 = new jsWndShape(); //Click area
 	og4.type=14;
 	grpAction0for2722 = function(pF){
     if(VarH1.contains('_done'))image200.show(); else if(typeof pF == 'function') pF();
@@ -981,10 +1005,12 @@ if( is.min ) {
 };
 
 	og2722.type=14;
+	og6142.arChld=[shape6143,shape6144,text6145,text6162,image6147,image6148,image6149,image6151,image6153,image6154,image6156,image6157,image6158,image6159,image6167,shape6168];
+	og6142.type=14;
 	var alertCtr = 0;
 	var trivPageId=22; //trivPage.id
-	var arWnds = [shape16,textbutton17,text19,image20,shape21,shape185,image194,text157,image200,shape186,image196,text161,image201,shape190,image198,text165,image205,textbutton171,textbutton175,textbutton180];
-	var arAttachObj = [og4,shape16,textbutton17,text19,image20,shape21,og2722,shape185,image194,text157,image200,shape186,image196,text161,image201,shape190,image198,text165,image205,textbutton171,textbutton175,textbutton180];
+	var arWnds = [shape16,textbutton17,text19,image20,shape21,shape185,image194,text157,image200,shape186,image196,text161,image201,shape190,image198,text165,image205,textbutton171,textbutton175,textbutton180,shape6143,shape6144,text6145,text6162,image6147,image6148,image6149,image6151,image6153,image6154,image6156,image6157,image6158,image6159,image6167,shape6168];
+	var arAttachObj = [og4,shape16,textbutton17,text19,image20,shape21,og2722,shape185,image194,text157,image200,shape186,image196,text161,image201,shape190,image198,text165,image205,textbutton171,textbutton175,textbutton180,og6142,shape6143,shape6144,text6145,text6162,image6147,image6148,image6149,image6151,image6153,image6154,image6156,image6157,image6158,image6159,image6167,shape6168];
 	var arPooledMedia = [];
 }
 /*! jQuery v3.3.1 | (c) JS Foundation and other contributors | jquery.org/license */
